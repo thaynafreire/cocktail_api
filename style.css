@@ -80,6 +80,7 @@ header{
     text-align: start;
     padding-left: 25px;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .card-container {
@@ -87,7 +88,8 @@ header{
     justify-content: center;
     padding: 20px;
     flex-wrap: wrap; /*para os card ficarem em baixo caso nao caiba na tela*/
-    gap: 250px;
+    gap: 120px;
+    cursor: pointer;
 }
 
 .card {
@@ -96,7 +98,7 @@ header{
     text-align: center;
     padding: 16px;
     width: 391px;
-    margin-top: 130px;
+    margin-top: 90px;
     height: 461px;
 }
 
@@ -116,3 +118,88 @@ header{
     border-radius: 20px;
 }
 
+/*outra tela*/
+
+/* quando a barra de pesquisa for escondida */
+#barra_pesquisa_header.hidden {
+    display: none;
+}
+
+
+#drink-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+#painel-esquerdo, #painel-direito {
+    width: 48%;
+}
+
+#painel-esquerdo {
+    background-color: #5A3E36;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* faz com que que o painel esquerdo tenha no mínimo a altura total da tela */
+}
+
+#painel-esquerdo h2 {
+    color: #FAF9F6; 
+    font-size: 32px; 
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 40px; 
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+#painel-esquerdo img {
+    width: 60%; 
+    height: auto;
+    border-radius: 15px;
+    margin-left: 100px
+}
+
+#lista-de-ingredientes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+#painel-direito h2{
+    color: #5A3E36;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+#lista-de-ingredientes{
+    margin-left: 20px;
+}
+
+#painel-direito img{
+    width: 180px;
+    height: 180px;
+}
+
+#painel-direito div{
+    font-size: 18px;
+    color: #47302a;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.ingrediente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/*oculta os detalhes do drink*/
+.hidden {
+    display: none;
+}
